@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function calculate() {
-        // TODO: calculating funtcion (eval)
+        display.value = eval(currentInput);
     }
 
     function clearDisplay() {
-        // TODO: func to clear display (just overwrite variable)
-
+        currentInput = "";
+        display.value = 0;
     }
 
     document.getElementById("one").addEventListener("click", () => appendToInput('1'));
