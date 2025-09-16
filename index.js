@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
             currentInput += value;
         }
         display.value = currentInput;
+        autoFontSize();
+    }
+
+    function autoFontSize() {
+        if (currentInput.length > 8) {
+            display.style.fontSize = '50px';
+        } else {
+            display.style.fontSize = '100px';
+        }
     }
 
     function calculate() {
